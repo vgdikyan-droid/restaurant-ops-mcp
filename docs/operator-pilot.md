@@ -1,8 +1,8 @@
 # First operator pilot
 
-The goal is to learn whether one operator can prepare a CSV, understand the
-report, and reconcile it with their own records. Running tests or a sample is
-not evidence of a completed restaurant pilot.
+Evaluate the complete operating workflow: prepare a CSV, interpret the report,
+reconcile it with source records, and identify improvements. This checklist
+provides a consistent way to capture findings and guide development.
 
 ## Use one period and a small scope
 
@@ -18,9 +18,8 @@ Record these facts alongside your inputs:
 - Source report and recipe/invoice references, kept privately.
 - Treatment of returns, comps, modifiers, tax, tips, and delivery fees.
 
-Estimates can help explore a workflow. Do not describe them as recorded sales
-or audited costs. Price times quantity is a calculated amount until reconciled
-with the corresponding POS sales total.
+Label estimated inputs separately from recorded values. Reconcile calculated
+sales (price times quantity) with the corresponding POS sales total.
 
 ## Verify and record feedback
 
@@ -35,6 +34,5 @@ with the corresponding POS sales total.
 ## Completion criteria
 
 A pilot is complete when an operator has tried the workflow, checked the
-numbers, and recorded what was learned, including failures. A successful pilot
-does not establish external adoption, profitability improvements, or program
-eligibility on its own.
+numbers, and recorded findings, discrepancies, and recommended improvements.
+Include the reporting scope and measurement method with any outcome reported.

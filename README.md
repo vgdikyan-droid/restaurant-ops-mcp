@@ -1,21 +1,35 @@
 # Restaurant Ops MCP
 
-Open-source MCP tools for analyzing restaurant menu economics with AI assistants.
+Menu sales, food-cost analysis, and contribution rankings through a local CLI and the Model Context Protocol (MCP).
 
-> **Status:** early alpha. The first release focuses on menu contribution margin and food-cost analysis from simple CSV data.
+Turn a menu sales export and per-portion ingredient costs into a repeatable operating review. Run reports locally or connect the same calculations to an MCP-compatible assistant.
 
 [![Tests](https://github.com/vgdikyan-droid/restaurant-ops-mcp/actions/workflows/tests.yml/badge.svg)](https://github.com/vgdikyan-droid/restaurant-ops-mcp/actions/workflows/tests.yml)
 
-Maintained by a restaurant operator at Balboa Poke, with AI assistance for
-implementation. Restaurant experience shapes the problems; tests and documented
-calculations make the software inspectable. External adoption and business
-outcomes have not yet been established.
+Created and maintained by the operator of **Balboa Poke**, Restaurant Ops MCP
+brings restaurant operating knowledge to open-source tooling. The project uses
+deterministic Python calculations, documented assumptions, and automated checks
+to make menu economics inspectable and repeatable.
+
+**Release:** [v0.2.0a1](https://github.com/vgdikyan-droid/restaurant-ops-mcp/releases/tag/v0.2.0a1) · Python 3.10–3.14 tested · MIT licensed.
+
+## Engineering and verification
+
+- **Shared calculation logic:** the CLI and MCP tools use the same menu metrics.
+- **46 automated tests:** arithmetic, CSV validation, command-line behavior, and
+  an actual MCP client/server connection, including recovery after invalid input.
+- **Compatibility checks:** CI covers Python 3.10–3.14 and the minimum supported
+  MCP SDK version.
+- **Package verification:** CI builds distribution archives, checks metadata,
+  and tests an installed wheel.
+- **Reviewable changes:** feature branches, pull requests, and passing CI precede
+  merges; release notes document supported behavior.
 
 ## Why this exists
 
 Restaurant operators often have useful data trapped in POS exports and spreadsheets, but turning that data into clear decisions usually requires manual analysis.
 
-Restaurant Ops MCP exposes small, auditable tools that an MCP-compatible AI assistant can call to answer questions such as:
+Restaurant Ops MCP exposes auditable tools that an MCP-compatible AI assistant can call to answer questions such as:
 
 - Which menu items contribute the most after ingredient costs?
 - What is the food-cost percentage for each item?
@@ -23,7 +37,7 @@ Restaurant Ops MCP exposes small, auditable tools that an MCP-compatible AI assi
 
 Price-change scenarios and period comparisons are planned, not implemented yet.
 
-The project is intentionally starting small and transparent. Each calculation lives in ordinary Python so operators and contributors can inspect how the numbers are produced.
+Calculations run in Python, independently of the assistant, so operators and contributors can inspect and test how each result is produced.
 
 ## Current tools
 

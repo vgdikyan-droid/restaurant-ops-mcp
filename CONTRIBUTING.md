@@ -2,7 +2,7 @@
 
 Thanks for considering a contribution to Restaurant Ops MCP.
 
-This project is early-stage, so small, focused contributions are especially useful.
+Focused contributions grounded in restaurant workflows are especially useful.
 
 ## Good first contributions
 
