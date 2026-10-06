@@ -1,7 +1,8 @@
 # Weekly menu sales and food-cost review
 
-Use this workflow to check one week's menu economics. The included menu is
-synthetic, and no real restaurant outcomes have been validated yet.
+Use this workflow to review one week's sales, ingredient costs, and contribution
+by menu item. The included synthetic menu demonstrates the input format and
+expected report; replace it with your own export for an operating review.
 
 ## 1. Prepare a small export
 
@@ -65,12 +66,12 @@ Do not infer actual food usage or waste from this report. Actual usage requires
 opening inventory, purchases, closing inventory, and adjustments. Labor, rent,
 fees, and other costs must also be considered before interpreting profitability.
 
-## 4. Record honest feedback
+## 4. Record findings and feedback
 
 Keep a private note of the period, number of items reviewed, any data adjustments,
 whether totals reconciled, and one useful finding or confusing result. If you
-measure time saved, record how you measured it. Do not claim savings or adoption
-without evidence.
+measure time saved, record the method and comparison period so the result is
+useful to other operators.
 
 To report a problem on GitHub, use a small anonymized or synthetic example and
 show the expected result. Never attach customer details, employee information,
