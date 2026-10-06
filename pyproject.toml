@@ -21,6 +21,10 @@ dev = [
   "pytest>=8.0,<9.0"
 ]
 
+[project.scripts]
+restaurant-ops = "restaurant_ops_mcp.cli:main"
+restaurant-ops-mcp = "restaurant_ops_mcp.server:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
