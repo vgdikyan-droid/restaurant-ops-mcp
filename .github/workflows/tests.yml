@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -28,3 +31,21 @@ jobs:
 
       - name: Run tests
         run: pytest -q
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build wheel and source distribution
+        run: |
+          python -m pip install build twine
+          python -m build
+          python -m twine check dist/*
+      - name: Test installed wheel without the source import path
+        run: |
+          python -m pip install dist/*.whl "pytest>=8,<9"
+          python -m pytest -q -o pythonpath=
+          python -m pip check

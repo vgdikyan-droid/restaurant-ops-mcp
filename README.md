@@ -4,6 +4,13 @@ Open-source MCP tools for analyzing restaurant menu economics with AI assistants
 
 > **Status:** early alpha. The first release focuses on menu contribution margin and food-cost analysis from simple CSV data.
 
+[![Tests](https://github.com/vgdikyan-droid/restaurant-ops-mcp/actions/workflows/tests.yml/badge.svg)](https://github.com/vgdikyan-droid/restaurant-ops-mcp/actions/workflows/tests.yml)
+
+Maintained by a restaurant operator at Balboa Poke, with AI assistance for
+implementation. Restaurant experience shapes the problems; tests and documented
+calculations make the software inspectable. External adoption and business
+outcomes have not yet been established.
+
 ## Why this exists
 
 Restaurant operators often have useful data trapped in POS exports and spreadsheets, but turning that data into clear decisions usually requires manual analysis.
@@ -67,6 +74,11 @@ interpreting results, and recording useful feedback. No AI account is needed
 for this local report.
 
 ## Quick start
+
+For a versioned source download, see [GitHub releases](https://github.com/vgdikyan-droid/restaurant-ops-mcp/releases).
+Extract the source archive, open its folder, and follow the virtual-environment
+and pip installation steps below (skip `git clone` when using an archive).
+This project is not published to PyPI; install from this repository or its releases.
 
 ### Requirements
 
@@ -182,6 +194,9 @@ Spicy Tuna Roll,13.50,4.70,95
 Contributions are welcome, especially from restaurant operators, hospitality technologists, and developers interested in practical MCP tooling.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+To try a real workflow, follow the [pilot checklist](docs/operator-pilot.md).
+Report a reproducible bug or operator feedback using the GitHub issue templates.
 
 ## License
 
