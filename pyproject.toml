@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "restaurant-ops-mcp"
-version = "0.1.0"
+version = "0.2.0a1"
 description = "Open-source MCP tools for restaurant menu and operating analysis."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -12,9 +12,19 @@ license = "MIT"
 authors = [
   { name = "vgdikyan-droid" }
 ]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
 dependencies = [
   "mcp[cli]>=2.0,<3.0"
 ]
+
+[project.urls]
+Repository = "https://github.com/vgdikyan-droid/restaurant-ops-mcp"
+Documentation = "https://github.com/vgdikyan-droid/restaurant-ops-mcp#readme"
+Issues = "https://github.com/vgdikyan-droid/restaurant-ops-mcp/issues"
 
 [project.optional-dependencies]
 dev = [
