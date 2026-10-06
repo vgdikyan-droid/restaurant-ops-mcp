@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Private operator data and locally saved reports
+/.venv*/
+/local-data/
+/weekly-review.txt
